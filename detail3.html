@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>User Experience Design for Dashboard App</title>
+	<link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<style>
+		.project-container {
+			background-color: white;
+			max-width: 1200px;
+			margin: 0 auto;
+			box-shadow: 0 0 30px rgba(0,0,0,0.1);
+		}
+		.full-width-image {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.breadcrumb {
+			padding: 20px;
+			background-color: #f8f9fa;
+			font-family: 'IBM Plex Mono', monospace;
+			font-size: 14px;
+		}
+		.breadcrumb a {
+			color: black;
+			text-decoration: none;
+		}
+		.breadcrumb a:hover {
+			text-decoration: underline;
+		}
+		.project-title {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			font-size: 40pt;
+			transform: translate(-50%, -50%);
+			color: white;
+			text-align: center;
+			text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+		}
+		.image-container {
+			position: relative;
+		}
+		
+		/* Slider Styles */
+		.project-slider {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+		}
+		.slider-container {
+			display: flex;
+			transition: transform 0.5s ease;
+			width: 300%;
+		}
+		.slider-slide {
+			width: 33.33%;
+			flex-shrink: 0;
+		}
+		.slider-slide img {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.slider-controls {
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			gap: 10px;
+		}
+		.slider-dot {
+			width: 10px;
+			height: 10px;
+			background-color: rgba(255,255,255,0.5);
+			border-radius: 50%;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		.slider-dot.active {
+			background-color: white;
+		}
+		
+		/* Slider Checkbox Hack */
+		.slider-toggle {
+			display: none;
+		}
+		#slide1:checked ~ .slider-container {
+			transform: translateX(0);
+		}
+		#slide2:checked ~ .slider-container {
+			transform: translateX(-33.33%);
+		}
+		#slide3:checked ~ .slider-container {
+			transform: translateX(-66.66%);
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="../index.html#contact">contact</a></li>
+			<li>works</li>
+			<li>expertience</li>
+			<li class="empty"></li>
+			<li><a href="profil.html">profil</a></li>
+			<li><a href="https://x.com/anzanul" target="_blank">twitter</a></li>
+			<li>linkedin</li>
+		</ul>
+	</nav>
+
+	<div class="project-container">
+		<div class="image-container">
+			<img src="./img/dashboard-app5.jpg" class="full-width-image" alt="Dashboard App UX Design Project">
+			<h1 class="project-title">User Experience Design<br>for Dashboard App</h1>
+		</div>
+		<div class="breadcrumb">
+			<a href="../index.html">Home</a> / User Experience Design for Dashboard App
+		</div>
+		<section class="project" style="padding-top: 50px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Project Overview</h2>
+						<p>Merancang pengalaman pengguna untuk aplikasi dashboard yang komprehensif untuk startup teknologi yang fokus pada analitik bisnis. Tujuan utama adalah menciptakan antarmuka yang intuitif, informatif, dan mudah dinavigasi bagi para profesional bisnis yang membutuhkan wawasan cepat dan mendalam.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Research & Discovery</h2>
+						<p>Proses penelitian mendalam meliputi:</p>
+						<ul>
+							<li>Wawancara mendalam dengan 50+ pengguna potensial dari berbagai industri</li>
+							<li>Analisis kompetitif terhadap 15 dashboard serupa di pasar</li>
+							<li>Sesi observasi pengguna untuk memahami alur kerja dan kebutuhan informasi</li>
+							<li>Pengujian prototipe awal dengan kelompok fokus pengguna</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>UX Design Strategy</h2>
+						<p>Pendekatan desain yang komprehensif berfokus pada:</p>
+						<ul>
+							<li>Desain antarmuka yang bersih dan minimalis</li>
+							<li>Visualisasi data yang informatif dan mudah dipahami</li>
+							<li>Sistem navigasi yang intuitif dengan hierarki informasi yang jelas</li>
+							<li>Responsivitas untuk berbagai ukuran layar dan perangkat</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Key Outcomes</h2>
+						<p>Hasil utama dari proyek desain UX:</p>
+						<ul>
+							<li>Peningkatan waktu penggunaan aplikasi sebesar 60%</li>
+							<li>Penurunan kompleksitas navigasi sebesar 40%</li>
+							<li>Peningkatan kepuasan pengguna sebesar 75% berdasarkan survei</li>
+							<li>Penghargaan 'Best UX Design' dari Digital Innovation Summit</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Project Gallery</h2>
+						<div class="project-slider">
+							<input type="radio" name="slider" id="slide1" class="slider-toggle" checked>
+							<input type="radio" name="slider" id="slide2" class="slider-toggle">
+							<input type="radio" name="slider" id="slide3" class="slider-toggle">
+							
+							<div class="slider-container">
+								<div class="slider-slide">
+									<img src="./img/dashboard-app2.jpg" alt="Dashboard App Main Interface">
+								</div>
+								<div class="slider-slide">
+									<img src="./img/dashboard-app3.jpg" alt="Dashboard App Analytics View">
+								</div>
+								<div class="slider-slide">
+									<img src="./img/dashboard-app4.jpg" alt="Dashboard App Mobile View">
+								</div>
+							</div>
+							
+							<div class="slider-controls">
+								<label for="slide1" class="slider-dot"></label>
+								<label for="slide2" class="slider-dot"></label>
+								<label for="slide3" class="slider-dot"></label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<footer id="contact">
+		<h2>Interested in<br>
+			learning more?<br>andianzanul@gmail.com</h2>
+			<p>designed & developed by Andi Zikra 2024</p>
+		</footer>
+	</body>
+	</html>
